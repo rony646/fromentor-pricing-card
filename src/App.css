@@ -4,7 +4,8 @@ body {
   box-sizing: border-box;
   background-color: #f6f6fe;
   font-family: 'Montserrat', sans-serif;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body, html {
@@ -22,36 +23,11 @@ body, html {
 
 #bottom > img {
   display: inline-block;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
 /* 2 Componente */
-
-.cards-box {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  min-height: 100%;
-  width: 100%;
-  /* background-color: #fff; */
-}
-
-.white-card {
-  margin: 20px 0 20px 0;
-  height: 380px;
-  width: 270px;
-  background-color: white;
-}
-
-.purple-card {
-  margin: 20px 0 20px 0;
-  height: 380px;
-  width: 270px;
-  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%))
-}
-
-
 
 @media only screen and (max-width: 600px) {
   body {
@@ -63,27 +39,5 @@ body, html {
   }
   #top {
     display: none;
-  }
-
-  /* 2º Component */
-
-  .cards-box {
-    padding-top: 55px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .white-card {
-    margin: 20px 0 20px 0;
-    height: 380px;
-    width: 270px;
-    background-color: white;
-  }
-
-  .purple-card {
-    margin: 20px 0 20px 0;
-    height: 380px;
-    width: 270px;
-    background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%))
   }
 }

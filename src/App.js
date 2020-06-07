@@ -2,6 +2,8 @@ import React from 'react';
 import top from './images/bg-top.svg'
 import bottom from './images/bg-bottom.svg'
 import Button from './Button/Button'
+import WhiteCard from './Cards/WhiteCard'
+import PurpleCard from './Cards/PurpleCard'
 import './App.css'
 
 function App() {
@@ -14,9 +16,9 @@ function App() {
         <Button />
 
         <div className="cards-box">
-          <div className="white-card"></div>
-          <div className="purple-card"></div>
-          <div className="white-card"></div>
+          <WhiteCard classes="white-card border-left"/>
+          <PurpleCard />
+          <WhiteCard classes="white-card border-right"/> 
         </div>
     </div>
   );
