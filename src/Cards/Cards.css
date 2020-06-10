@@ -9,7 +9,7 @@
   }
   
   .border-left {
-    border-radius: 13px 0px 0px 13px; 
+    border-radius: 13px 0px 0px 13px;
   }
   
   .border-right {
@@ -81,16 +81,57 @@
     padding: 15px 0px 15px 0px;
     font-size: 14px;
   }
-
-  .purple-button {
+  .white-button {
     font-family: 'Montserrat';
-    background-image: linear-gradient(to right  hsl(236, 72%, 79%) hsl(237, 63%, 64%));
+    color: #696fdd;
+    background-color: #fff;
+    border-radius: 5px;
     height: 40px;
     width: 90%;
     position: relative;
     top: 30px;
     outline: none;
     border: none;
+  }
+  .white-button:hover {
+    background-color: #696fdd;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  .white-button:active {
+    background-color: #696fdd;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: 0.2s;
+  }
+
+  .purple-button {
+    font-family: 'Montserrat';
+    color: #fff;
+    background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+    border-radius: 5px;
+    height: 40px;
+    width: 90%;
+    position: relative;
+    top: 30px;
+    outline: none;
+    border: none;
+  }
+
+  .purple-button:hover {
+    background-image: linear-gradient(#fff, #fff);
+    border: 1px solid #696fdd;
+    color: #696fdd;
+    transition: 0.2s;
+  }
+
+  .purple-button:active {
+    background-image: linear-gradient(#fff, #fff);
+    border: 1px solid #696fdd;
+    color: #696fdd;
+    transition: 0.2s;
   }
 
 
