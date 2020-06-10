@@ -15,7 +15,7 @@ body, html {
 
 #top > img {
   display: inline-block;
-  position: absolute;
+  position: fixed;
   height: 520px;
   right: 0;
   top: 0;

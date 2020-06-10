@@ -2,12 +2,26 @@ import React from 'react';
 import '../Cards/Cards.css';
 
 const purple = props => {
-    const style = {
-        color: '#fff'
-    }
     return (
         <div className="purple-card">
-            <p style={style}>TEST</p>
+            <span>{props.category}</span>
+            <div className="pricing">
+                <span id="dolar-sign">$</span>{props.price}
+            </div>
+            <div className="white-line"></div>
+            <div className="sub">
+                <span>{props.storage} Storage</span>
+            </div>
+            <div className="white-line"></div>
+            <div className="sub">
+                <span>{props.users} Users Allowed</span>
+            </div>
+            <div className="white-line"></div>
+            <div className="sub">
+                <span>Send up to {props.upload}</span>
+            </div>
+            <div className="white-line"></div>
+            <button className="white-button">LEARN MORE</button>
         </div>
     )
 }
