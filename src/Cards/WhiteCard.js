@@ -6,7 +6,7 @@ function WhiteCard(props) {
         <div className={props.classes}>
             <span>{props.category}</span>
             <div className="pricing">
-                <span id="dolar-sign">$</span>{props.price}
+                <span class="dolar-sign">$</span>{props.price}
             </div>
             <div className="black-line"></div>
             <div className="sub">

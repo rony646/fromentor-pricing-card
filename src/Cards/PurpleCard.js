@@ -6,7 +6,7 @@ const purple = props => {
         <div className="purple-card">
             <span>{props.category}</span>
             <div className="pricing">
-                <span id="dolar-sign">$</span>{props.price}
+                <span class="dolar-sign">$</span>{props.price}
             </div>
             <div className="white-line"></div>
             <div className="sub">
